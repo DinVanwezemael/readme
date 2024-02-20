@@ -51,3 +51,81 @@ private Person MethodName()
     return new Person();
 }
 ```
+## Spacing
+
+### if statement
+
+don't do
+
+```
+if (data.Success) 
+    persons.Add(new Person 
+    {
+        FirstName = "John",
+        LastName = "Doe"
+    });
+
+```
+
+instead do
+
+```
+if (data.Success) 
+{
+    persons.Add(new Person 
+    {
+        FirstName = "John",
+        LastName = "Doe"
+    });
+}
+
+
+or 
+
+
+if (data.Success) 
+{
+    var newPerson = new Person 
+    {
+        FirstName = "John",
+        LastName = "Doe"
+    };
+
+    persons.Add(newPerson);
+}
+
+```
+
+### if else statement
+
+don't do
+
+```
+if (data.Success) 
+    //
+else 
+{
+    persons.Add(new Person 
+    {
+        FirstName = "John",
+        LastName = "Doe"
+    });
+}
+```
+
+instead do
+
+```
+if (data.Success) 
+{
+    // logic
+}
+else 
+{
+    persons.Add(new Person 
+    {
+        FirstName = "John",
+        LastName = "Doe"
+    });
+}
+```
