@@ -9,7 +9,7 @@ Why?
 
 ## Method parameters
 
-don't do
+❌ don't do
 
 ```
 private void MethodName(string parameters1, string parameter2,
@@ -19,7 +19,7 @@ private void MethodName(string parameters1, string parameter2,
 }
 ```
 
-instead do
+✅ instead do
 
 ```
 private void MethodName(
@@ -34,7 +34,7 @@ private void MethodName(
 ```
 ## Method return
 
-don't do
+❌ don't do
 
 ```
 private Person MethodName()
@@ -43,7 +43,7 @@ private Person MethodName()
 }
 ```
 
-instead do
+✅ instead do
 
 ```
 private Person MethodName()
@@ -55,7 +55,7 @@ private Person MethodName()
 
 ### if statement
 
-don't do
+❌ don't do
 
 ```
 if (data.Success) 
@@ -67,7 +67,7 @@ if (data.Success)
 
 ```
 
-instead do
+✅ instead do
 
 ```
 if (data.Success) 
@@ -77,28 +77,13 @@ if (data.Success)
         FirstName = "John",
         LastName = "Doe"
     });
-}
-
-
-or 
-
-
-if (data.Success) 
-{
-    var newPerson = new Person 
-    {
-        FirstName = "John",
-        LastName = "Doe"
-    };
-
-    persons.Add(newPerson);
 }
 
 ```
 
 ### if else statement
 
-don't do
+❌ don't do
 
 ```
 if (data.Success) 
@@ -113,7 +98,7 @@ else
 }
 ```
 
-instead do
+✅ instead do
 
 ```
 if (data.Success) 
